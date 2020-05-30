@@ -1,0 +1,21 @@
+server:
+  port: 8803
+  servlet:
+    context-path: /
+
+
+
+
+spring:
+  datasource:
+    type: com.alibaba.druid.pool.DruidDataSource
+    url: jdbc:mysql://127.0.0.1:3306/odin?useUnicode=true&characterEncoding=UTF-8
+    username: root
+    password: root
+
+
+
+
+constant:
+  # es参数
+  esUrl: http://127.0.0.1:8920
