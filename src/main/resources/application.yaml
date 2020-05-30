@@ -12,6 +12,11 @@ spring:
     url: jdbc:mysql://127.0.0.1:3306/odin?useUnicode=true&characterEncoding=UTF-8
     username: root
     password: root
+  jpa:
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+
 
 
 

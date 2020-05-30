@@ -13,8 +13,6 @@ public class OdinApplication {
     public static void main(String[] args) {
         SpringApplication.run(OdinApplication.class, args);
         LOG.info("[Application] Application Started ...chkinglee");
-        EsUtil.saveDoc(false,"chkinglee_test","chkinglee_test_type","aaa1231231234","{\"name\":\"chkinglee\"}");
-
     }
 
 }

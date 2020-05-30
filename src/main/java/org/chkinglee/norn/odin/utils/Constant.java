@@ -8,6 +8,8 @@ package org.chkinglee.norn.odin.utils;
  **/
 public class Constant {
 
+    public static final String API_V1 = "/api/v1";
+
     // 错误码定义
     public static final int SUCCESS_CODE = 0;
     public static final String SUCCESS_MSG = "success";
