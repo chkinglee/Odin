@@ -20,4 +20,6 @@ public class Constant {
     public static final int REQUIRE_PARAM_CODE = 3002;
     public static final String REQUIRE_PARAM_MSG = "required param missing";
 
+    public static final String ODIN_REDIS_KEY_TENANT_PREFIX = "ODIN:TENANT";
+
 }

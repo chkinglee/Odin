@@ -50,7 +50,7 @@ public class EsUtil {
             // headerMap.put("Authorization", ES_ACCESS_TOKEN);
 
             response = HttpClientUtil.postJson(url, jsonStr, headerMap);
-            LOG.info("[saveDoc] id=" + id + "    jsonStr:" + jsonStr + "    response:" + response);
+            // LOG.info("[saveDoc] id=" + id + "    jsonStr:" + jsonStr + "    response:" + response);
 
             JSONObject jsonObject = JSONObject.parseObject(response);
             if (jsonObject != null && jsonObject.get("_id") != null) {

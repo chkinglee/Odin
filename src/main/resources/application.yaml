@@ -3,9 +3,6 @@ server:
   servlet:
     context-path: /
 
-
-
-
 spring:
   datasource:
     type: com.alibaba.druid.pool.DruidDataSource
@@ -16,11 +13,13 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-
-
-
-
+  redis:
+    host: 127.0.0.1
+    port: 6378
+    database: 0
+    password: 123456
 
 constant:
   # es参数
   esUrl: http://127.0.0.1:8920
+

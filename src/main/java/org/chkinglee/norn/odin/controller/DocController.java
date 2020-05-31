@@ -29,7 +29,7 @@ public class DocController {
                                                      @PathVariable("module") String module,
                                                      @PathVariable("id") String id,
                                                      @RequestBody String docContent) {
-        LOG.info("[Odin] tenant: {}, module: {}, docContent: {}.", tenant, module, docContent);
+        // LOG.info("[Odin] tenant: {}, module: {}, docContent: {}.", tenant, module, docContent);
 
         // TODO 检查docContent是否能转换为json
         boolean isSuccess = docService.createOrUpdateDoc(tenant, module, id, docContent);
