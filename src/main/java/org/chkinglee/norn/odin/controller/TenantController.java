@@ -1,8 +1,8 @@
 package org.chkinglee.norn.odin.controller;
 
 import org.chkinglee.norn.odin.controller.dto.ResultResponse;
-import org.chkinglee.norn.odin.mapper.TenantRepository;
 import org.chkinglee.norn.odin.model.Tenant;
+import org.chkinglee.norn.odin.service.TenantService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -24,12 +24,12 @@ import static org.chkinglee.norn.odin.utils.Constant.*;
 public class TenantController {
 
     @Autowired
-    TenantRepository tenantRepository;
+    TenantService tenantService;
 
     @GetMapping("/{tenant}/{module}")
     public ResultResponse<List<Tenant>> getIndexAndTypeByTenantAndModule(@PathVariable("tenant") String tenant,
                                                                          @PathVariable("module") String module) {
-        List<Tenant> tenantList = tenantRepository.findByTenantAndModule(tenant, module);
+        List<Tenant> tenantList = tenantService.findTenant(tenant, module);
         return new ResultResponse<>(SUCCESS_CODE, SUCCESS_MSG, tenantList);
     }
 

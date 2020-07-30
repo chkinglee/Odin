@@ -14,12 +14,12 @@ spring:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
   redis:
-    host: 127.0.0.1
-    port: 6378
+    host: 192.168.59.132
+    port: 6301
     database: 0
-    password: 123456
+    password:
 
 constant:
   # es参数
-  esUrl: http://127.0.0.1:8920
+  esUrl: http://127.0.0.1:9200
 
